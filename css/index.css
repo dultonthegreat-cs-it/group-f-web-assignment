@@ -53,7 +53,7 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 body {
-  background-image:url(https://dultonthegreat-cs-it.github.io/group-f-web/images/home/kids5.jpg);
+  background-image:url(/images/home/kids5.jpg);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,times new roman;
   color: #343a40;
   margin: 0;
