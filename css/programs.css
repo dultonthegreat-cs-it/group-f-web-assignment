@@ -1,0 +1,67 @@
+
+.proghead {
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.proghead h2 {
+ 
+  font-size: 2rem;
+  font-weight: 700;
+  color: #212529;
+}
+
+.proghead p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+.proggrid {
+  margin: 3rem 0;
+}
+
+.progcard {
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.progcard:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+ */
+  transform: translateY(-2px);
+}
+
+.progtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #124E8C;
+  margin-bottom: 0.8rem;
+}
+
+.progtext {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.proglist {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.proglist li {
+  margin-bottom: 0.5rem;
+}
+
+.btnlearn {
+  font-size: 0.85rem;
+  padding: 0.4rem 0.8rem;
+  margin-top: 0.5rem;
+}
+
+footer {
+  margin-top: 3rem;
+}
