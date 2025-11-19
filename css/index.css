@@ -1,0 +1,65 @@
+.navbar-brand {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.carousel-item {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  border-radius: 8px;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  color: #007bff;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.card-text {
+  color: #6c757d;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+
+.hover-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.hover-card:hover {
+
+  transform: translateY(-5px);
+
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+body {
+  background-image:url(https://dultonthegreat-cs-it.github.io/group-f-web/images/home/kids5.jpg);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,times new roman;
+  color: #343a40;
+  margin: 0;
+  padding: 0;
+}
+.text-center text-body-secondary {
+  color: #fcfdfd;
+  font-size: 14px;
+}
