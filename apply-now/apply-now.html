@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Apply Now – Commerce & Business School</title>
+      <link rel="stylesheet" href="../css/apply.css">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    </head>
+
+    <body>
+
+    <header class="header">
+      <!-- Off canvas navbar begins-->
+      <nav class="navbar bg-body-tertiary fixed-top">
+        <div class="container-fluid offcanvas-navbar">
+          <h3 class="apply-now-text">Apply Now Begin your journey with us</h3>
+          <button class="navbar-toggler bg-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="./apply-now.html">New page</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- Off canvas navbar ends-->
+      
+    </header>
+
+    <main>
+      <div class="form-section">
+        <h2>Application Form</h2>
+
+        <form action="#" method="post" enctype="multipart/form-data" class="application-form">
+
+          <fieldset class="form-box">
+            <legend>Application Details</legend>
+
+            <!-- Title -->
+            <lzabel for="title">Title</label>
+            <select id="title" name="title" required>
+              <option value="">Enter title</option>
+              <option value="Mr">Mr</option>
+              <option value="Mrs">Mrs</option>
+              <option value="Miss">Miss</option>
+            </select>
+
+            <!-- Full Name -->
+            <label for="fullname">Full Name</label>
+            <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+
+            <!-- Date of Birth -->
+            <label for="dob">Date of Birth</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <!-- Nationality -->
+            <label for="nationality">Nationality</label>
+            <input type="text" id="nationality" name="nationality" placeholder="e.g. Ugandan" required>
+
+            <!-- Email -->
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <!-- Phone -->
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" maxlength="12" pattern="[0-9]{9,12}" placeholder="Enter phone number" required>
+
+            <!-- Academic Info -->
+            <label for="year_s4">Year of Completion (S4)</label>
+            <input type="number" id="year_s4" name="year_s4" placeholder="e.g. 2020" min="1990" max="2030" required>
+
+            <label for="year_s6">Year of Completion (S6)</label>
+            <input type="number" id="year_s6" name="year_s6" placeholder="e.g. 2022" min="1990" max="2030">
+
+            <!-- Academic Documents -->
+            <label for="documents">Upload Academic Requirements</label>
+            <input type="file" id="documents" name="documents[]" accept=".pdf,.jpg,.jpeg,.png" multiple required>
+
+            <!-- Program -->
+            <label for="program">Program of Interest</label>
+            <select id="program" name="program" required>
+              <option value="">Select a program</option>
+              <option value="business_admin">Business Administration</option>
+              <option value="accounting">Accounting & Finance</option>
+              <option value="commerce">Bachelor of Commerce</option>
+              <option value="marketing">Marketing & Management</option>
+            </select>
+
+            <!-- Other Info -->
+            <label for="otherinfo">Reason why the institution should admit you</label>
+            <textarea id="otherinfo" name="otherinfo" rows="4" placeholder="Reason why you should be admitted"></textarea>
+
+            <!-- Submit -->
+            <button type="submit" class="btn-apply">Submit Application</button>
+
+          </fieldset>
+
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>Email us at: hillacademy@gmail.com | akoknoon12@gmail.com</p>
+      <p>AKOK JAMES NOON</p>
+      <p>2025-D301-13339</p>
+      <p>DIPLOMA IN INFORMATION TECHNOLOGY NKOZI CAMPUS</p>
+    </footer>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    </body>
+    </html>
