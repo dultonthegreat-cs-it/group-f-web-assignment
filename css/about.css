@@ -16,7 +16,11 @@ margin-bottom: 5%;
 
 }
 .maindiv{
+<<<<<<< HEAD
+background-image: url(../images/about/background\ 1.jpg);
+=======
 background-image: url(./images/about/background 1.jpg);
+>>>>>>> 5d4c0006656264af3fcdae0edcee34bc5b5328ee
 background-repeat: no-repeat;
 
 }
