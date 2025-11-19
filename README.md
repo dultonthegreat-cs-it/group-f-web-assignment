@@ -1,2 +1,2 @@
 # group-f-web-assignment
-https://github.com/dultonthegreat-cs-it/group-f-web-assignment.git
+https://dultonthegreat-cs-it.github.io/group-f-web-assignment/
