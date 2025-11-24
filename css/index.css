@@ -53,7 +53,7 @@
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
 }
 body {
-  background-image:url(/images/home/kids5.jpg);
+  background-image:url(../images/apply/image.png.jpg);
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif,times new roman;
   color: #343a40;
   margin: 0;
@@ -62,4 +62,18 @@ body {
 .text-center text-body-secondary {
   color: #fcfdfd;
   font-size: 14px;
+}
+.container my-5 {
+  display: flex;
+  flex-wrap: wrap; 
+  align-items: stretch; 
+  gap: 20px; 
+}
+
+.card {
+
+  flex: 1 1 300px; 
+
+  border: 1px solid #ccc; 
+  padding: 15px;
 }
