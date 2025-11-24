@@ -38,3 +38,28 @@ body {
     margin: 0;
     padding: 20px;
 }
+/* Add to your ./css/index.css file */
+.navbar {
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+.navbar.scrolled {
+    /* Slightly less opaque background and a small shadow when scrolled */
+    background-color: rgba(13, 110, 253, 0.9); /* primary color with 90% opacity */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+/* Add to your ./css/index.css file */
+.card {
+    /* Apply transition to all card elements that might animate */
+    transition: opacity 1s ease-out;
+}
+
+/* Initial state for the fade-in effect */
+.container .card:first-child {
+    opacity: 0;
+}
+
+/* Final state after JS adds the 'loaded' class */
+.container .card:first-child.loaded {
+    opacity: 1;
+}

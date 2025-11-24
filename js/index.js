@@ -50,3 +50,26 @@ function topFunction() {
         behavior: 'smooth' // This property ensures a smooth, animated scroll, not an instant jump.
     });
 }
+// --- 1. Header Scroll Fade-Out/In Effect ---
+const navbar = document.querySelector('.navbar');
+const scrollThreshold = 50; // Distance in pixels to scroll before fading
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > scrollThreshold) {
+        // Add a class when scrolled down
+        navbar.classList.add('scrolled');
+    } else {
+        // Remove the class when back near the top
+        navbar.classList.remove('scrolled');
+    }
+});
+// --- 2. "Welcome" Message Fade-In on Load ---
+const welcomeCard = document.querySelector('.container .card:first-child');
+
+// Add a class to trigger the fade-in effect after the DOM is ready
+document.addEventListener('DOMContentLoaded', () => {
+    // Add the 'loaded' class after a very slight delay for better effect
+    setTimeout(() => {
+        welcomeCard.classList.add('loaded');
+    }, 100);
+});
