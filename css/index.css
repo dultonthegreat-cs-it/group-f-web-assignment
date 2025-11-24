@@ -1,103 +1,51 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--bs-light); 
-    color: #333;
+/* ------------------------------------------------------------------- */
+/* CSS to be added to '../css/index.css' to enforce block layout and fixed size */
+/* ------------------------------------------------------------------- */
+
+/* 1. FORCE VERTICAL STACKING (Block Format) */
+/* We target the specific section where the service cards are located */
+section .row {
+    /* Overrides Bootstrap's 'display: flex' for a simple stacking flow */
+    display: block; 
 }
 
-.bg-primary {
-    background-color: var(--bs-primary) !important;
+/* Force each column item to take up full available width and center it for a cleaner stack */
+section .col-md-4 {
+    width: 100%;
+    /* Limit the maximum width of the stacked block on very large screens for readability */
+    max-width: 450px; 
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    /* Ensure standard block spacing is maintained */
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    padding-right: var(--bs-gutter-x, 0.75rem);
 }
 
-/* Updated banner color to dark blue to match the light body text */
-p[style*="aliceblue"] {
-    color: var(--bs-white) !important; 
-    padding: 5px 0;
-    margin-bottom: 0;
+/* 2. ENFORCE UNIFORM CARD SIZE */
+section .card.hover-card {
+    /* Set fixed dimensions for uniform size */
+    width: 100%; /* Inherits the max-width of its parent .col-md-4 (450px) */
+    height: 250px; /* Fixed height for all cards */
+    
+    /* Ensures content is contained within the fixed box */
+    overflow: hidden; 
+    
+    /* Adds a slight visual lift to emphasize the block structure */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s; /* Keeps the hover effect smooth */
 }
 
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.4rem;
+/* 3. OPTIMIZE CONTENT FLOW INSIDE FIXED BOX */
+section .card-body {
+    height: 100%;
+    /* Use flex to space out the content: title, text, and button */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
-.nav-link.active,
-.nav-link:hover {
-    color: var(--bs-warning) !important;
-    border-bottom: 2px solid var(--bs-warning);
+/* You might already have a hover effect, but here is a simple one for continuity */
+.hover-card:hover {
+    transform: translateY(-5px);
 }
-
-/* --- Core Card Styling (applies to all cards) --- */
-.card {
-    border: none;
-    border-radius: 8px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    transition: all 0.2s ease-in-out;
-}
-
-/* --- Hover Effect (applies to all cards) --- */
-.card.hover-card:hover {
-    transform: translateY(-3px); 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.card-title {
-    font-weight: 600;
-    color: var(--bs-primary);
-}
-
-.card-body h1 {
-    color: var(--bs-primary);
-    font-weight: bold;
-}
-
-/* --- Section Card Specific Styles (light blue background) --- */
-.card.hover-card.bg-image-1, 
-.card.hover-card.bg-image-2,
-.card.hover-card.bg-image-3 {
-    /* Removed min-height to rely solely on Bootstrap's align-items-stretch */
-    /* Set background to light blue */
-    background-color: #e0f7ff; 
-    position: relative;
-    /* Remove background image properties */
-    background-image: none;
-    background-size: initial;
-}
-
-/* Remove the dark overlay */
-.card.hover-card::before {
-    content: none;
-}
-
-.card-body {
-    position: relative; 
-    z-index: 2; 
-    height: 100%; 
-    /* Reset text color back to dark for readability on light blue */
-    color: #333;
-}
-
-/* Reset hover styles specific to the overlay */
-.card.hover-card:hover::before {
-    background-color: transparent; 
-}
-
-/* Adjust card titles in the section cards back to primary/dark blue */
-.bg-image-1 .card-title,
-.bg-image-2 .card-title,
-.bg-image-3 .card-title {
-    color: var(--bs-primary) !important;
-}
-
-.card-text ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.card-text li {
-    padding: 3px 0;
-    margin-left: 10px;
-}
-
-.carousel-inner .carousel-item img {
-    height: 400px;
-    object-fit: cover;
