@@ -31,8 +31,8 @@ section .card-body {
     transform: translateY(-5px);
 }
 body {
+    background-color: #abc5e2;
 
-    background-image: url(./group-f-web-assignment/images/home/kids5.jpg); 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
     color: #343a40; 
     margin: 0;
