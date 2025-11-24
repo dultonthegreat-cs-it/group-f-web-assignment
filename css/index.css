@@ -71,17 +71,17 @@ p[style*="aliceblue"] {
 /* Specific background images (Update paths as needed) */
 .bg-image-1 {
     /* Corresponds to the Academics card image */
-    background-image: url('../group-f-web-assignment/images/about/student 2.jpg');
+    background-image: url('../group-f-web-assignment/images/home/sports day.jpg');
 }
 
 .bg-image-2 {
     /* Corresponds to the Community Service card image */
-    background-image: url('../group-f-web-assignment/images/home/kids5.jpg');
+    background-image: url('../group-f-web-assignment/images/home/student 2.jpg');
 }
 
 .bg-image-3 {
     /* Corresponds to the Courses Offered card image */
-    background-image: url('../group-f-web-assignment/images/home/kids5.jpg'); 
+    background-image: url('../group-f-web-assignment/images/home/student 3.jpg'); 
     /* You may want to use a different image here */
 }
 
