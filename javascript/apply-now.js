@@ -1,4 +1,4 @@
-//Submit form
+//Submit
 const form = document.querySelector(".application-form");
 
 form.addEventListener("submit", (e) => {
