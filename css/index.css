@@ -1,103 +1,40 @@
+section .row {
+    display: block; 
+}
+
+section .col-md-4 {
+    width: 100%;
+    max-width: 450px; 
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    padding-right: var(--bs-gutter-x, 0.75rem);
+}
+
+section .card.hover-card {
+    width: 100%; 
+    height: 250px; 
+    overflow: hidden; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    transition: transform 0.2s; 
+}
+
+section .card-body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hover-card:hover {
+    transform: translateY(-5px);
+}
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--bs-light); 
-    color: #333;
+    background-color: #000913;
+    background-image: url(../group-f-web-assignment/images/home/kids5.jpg); 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    color: #343a40; 
+    margin: 0;
+    padding: 20px;
 }
-
-.bg-primary {
-    background-color: var(--bs-primary) !important;
-}
-
-/* Updated banner color to dark blue to match the light body text */
-p[style*="aliceblue"] {
-    color: var(--bs-white) !important; 
-    padding: 5px 0;
-    margin-bottom: 0;
-}
-
-.navbar-brand {
-    font-weight: bold;
-    font-size: 1.4rem;
-}
-
-.nav-link.active,
-.nav-link:hover {
-    color: var(--bs-warning) !important;
-    border-bottom: 2px solid var(--bs-warning);
-}
-
-/* --- Core Card Styling (applies to all cards) --- */
-.card {
-    border: none;
-    border-radius: 8px; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
-    transition: all 0.2s ease-in-out;
-}
-
-/* --- Hover Effect (applies to all cards) --- */
-.card.hover-card:hover {
-    transform: translateY(-3px); 
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.card-title {
-    font-weight: 600;
-    color: var(--bs-primary);
-}
-
-.card-body h1 {
-    color: var(--bs-primary);
-    font-weight: bold;
-}
-
-/* --- Section Card Specific Styles (light blue background) --- */
-.card.hover-card.bg-image-1, 
-.card.hover-card.bg-image-2,
-.card.hover-card.bg-image-3 {
-    /* Removed min-height to rely solely on Bootstrap's align-items-stretch */
-    /* Set background to light blue */
-    background-color: #e0f7ff; 
-    position: relative;
-    /* Remove background image properties */
-    background-image: none;
-    background-size: initial;
-}
-
-/* Remove the dark overlay */
-.card.hover-card::before {
-    content: none;
-}
-
-.card-body {
-    position: relative; 
-    z-index: 2; 
-    height: 100%; 
-    /* Reset text color back to dark for readability on light blue */
-    color: #333;
-}
-
-/* Reset hover styles specific to the overlay */
-.card.hover-card:hover::before {
-    background-color: transparent; 
-}
-
-/* Adjust card titles in the section cards back to primary/dark blue */
-.bg-image-1 .card-title,
-.bg-image-2 .card-title,
-.bg-image-3 .card-title {
-    color: var(--bs-primary) !important;
-}
-
-.card-text ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.card-text li {
-    padding: 3px 0;
-    margin-left: 10px;
-}
-
-.carousel-inner .carousel-item img {
-    height: 400px;
-    object-fit: cover;
