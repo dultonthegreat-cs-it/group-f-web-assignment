@@ -53,3 +53,67 @@ p[style*="aliceblue"] {
     padding: 3px 0;
     margin-left: 10px;
 }
+/* --- NEW: Background Image Card Styles --- */
+
+.card.hover-card {
+    /* Define a minimum height for all cards for initial uniformity */
+    min-height: 400px;
+    position: relative; /* Essential for positioning the overlay */
+}
+
+/* Base style for the card image containers */
+.bg-image-1, .bg-image-2, .bg-image-3 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Specific background images (Update paths as needed) */
+.bg-image-1 {
+    /* Corresponds to the Academics card image */
+    background-image: url('../group-f-web-assignment/images/about/student 2.jpg');
+}
+
+.bg-image-2 {
+    /* Corresponds to the Community Service card image */
+    background-image: url('../group-f-web-assignment/images/home/kids5.jpg');
+}
+
+.bg-image-3 {
+    /* Corresponds to the Courses Offered card image */
+    background-image: url('../group-f-web-assignment/images/home/kids5.jpg'); 
+    /* You may want to use a different image here */
+}
+
+/* Overlay for Readability */
+.card-body {
+    /* Makes the content container aware of the card's boundaries */
+    position: relative; 
+    z-index: 2; /* Ensures text is above the overlay */
+    height: 100%; /* Important for stretching content within the card */
+}
+
+/* The Overlay: This is the key to text readability */
+.card.hover-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Dark semi-transparent color */
+    background-color: rgba(0, 0, 0, 0.6); 
+    z-index: 1;
+    border-radius: 8px; /* Match card border radius */
+}
+
+/* Card Hover Adjustment */
+.card.hover-card:hover::before {
+    /* Make the overlay slightly lighter on hover for effect */
+    background-color: rgba(0, 0, 0, 0.4); 
+}
+
+/* Removed old card image sizing as images are now backgrounds */
+.card-img img {
+    display: none; 
+}
