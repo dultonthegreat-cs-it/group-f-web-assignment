@@ -1,51 +1,32 @@
-/* ------------------------------------------------------------------- */
-/* CSS to be added to '../css/index.css' to enforce block layout and fixed size */
-/* ------------------------------------------------------------------- */
-
-/* 1. FORCE VERTICAL STACKING (Block Format) */
-/* We target the specific section where the service cards are located */
 section .row {
-    /* Overrides Bootstrap's 'display: flex' for a simple stacking flow */
     display: block; 
 }
 
-/* Force each column item to take up full available width and center it for a cleaner stack */
 section .col-md-4 {
     width: 100%;
-    /* Limit the maximum width of the stacked block on very large screens for readability */
     max-width: 450px; 
     margin-left: auto;
     margin-right: auto;
     float: none;
-    /* Ensure standard block spacing is maintained */
     padding-left: var(--bs-gutter-x, 0.75rem);
     padding-right: var(--bs-gutter-x, 0.75rem);
 }
 
-/* 2. ENFORCE UNIFORM CARD SIZE */
 section .card.hover-card {
-    /* Set fixed dimensions for uniform size */
-    width: 100%; /* Inherits the max-width of its parent .col-md-4 (450px) */
-    height: 250px; /* Fixed height for all cards */
-    
-    /* Ensures content is contained within the fixed box */
+    width: 100%; 
+    height: 250px; 
     overflow: hidden; 
-    
-    /* Adds a slight visual lift to emphasize the block structure */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-    transition: transform 0.2s; /* Keeps the hover effect smooth */
+    transition: transform 0.2s; 
 }
 
-/* 3. OPTIMIZE CONTENT FLOW INSIDE FIXED BOX */
 section .card-body {
     height: 100%;
-    /* Use flex to space out the content: title, text, and button */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-/* You might already have a hover effect, but here is a simple one for continuity */
 .hover-card:hover {
     transform: translateY(-5px);
 }
