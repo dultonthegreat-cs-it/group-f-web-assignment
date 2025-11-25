@@ -1,0 +1,173 @@
+
+
+.body {
+    width: 100%;
+    margin: auto;
+    padding-top: 40px;
+}
+
+
+    .heading {
+    text-align: center;
+    font-size: 60px;
+    margin-bottom: 40px;
+    color:white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight:bold;
+}
+
+.section-for-contacts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.left-side {
+    width:40% ;
+    min-width: 280px;
+}
+
+
+.info-content {
+    display: flex;
+    margin-bottom: 25px;
+    margin-left: 40px;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    margin-right: 15px;
+    
+}
+
+.info-content h3 {
+    margin: 0;
+    color: red;
+}
+
+.socialmedia-icons img {
+    width: 28px;
+    margin-right: 10px;
+    cursor: pointer;
+    
+}
+
+.follow {
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.right-side {
+    width: 55%;
+    min-width: 300px;
+    background: lightgoldenrodyellow;
+    color: black;
+    padding: 25px;
+    border-radius: 5px;
+}
+
+
+.right-side h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color:blue;
+}
+
+input{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid grey;
+    border-radius: 4px;
+    font-size: 15px;
+    height: 250px;
+}
+
+.name-row {
+    display: flex;
+    gap: 10px;
+}
+
+
+img {
+    border-radius: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    background:white;
+    border: solid gray 1px;
+    border-radius: 4px;
+
+}
+
+button:hover {
+    background: burlywood;
+    color: white;
+    border-radius: 20px;
+}
+
+.nav-right {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-item {
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 5px;
+    
+}
+
+
+.nav-item:hover {
+    background: lightseagreen;
+    border-radius: 25px;
+}
+
+/*footer section*/
+.footer{
+    display: flex;
+    justify-content: space-between;
+    background: black;
+    color: white;
+}
+.my-infor{
+    display: flex;
+    gap: 30px;
+    color: yellow;
+    margin-bottom: 50px;
+    justify-content: center;
+}
+.first-it{
+    margin-left: 5px;
+}
+.pinfor{
+    color: yellow;
+}
+.pinfor h3{
+    color: white;
+}
+.container{
+    display: flex;
+}
+.nav-item{
+    display: flex;
+}
+.socialmedia-icons{
+    margin-left: 30px;
+    margin: 5px;
+   
+}
